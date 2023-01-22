@@ -66,10 +66,9 @@
         </section>
             </div> 
             
-
         </section>
         <!-- Menu Grid-->
-        <section class="page-section bg-light" id="menu">
+        <section class="page-section bg-secondary" id="menu">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Menu</h2>
@@ -85,10 +84,6 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/menu/menu1.jpg" alt="..." />
                             </a>
-                            <div class="menu-caption">
-                                {{-- <div class="menu-caption-heading">Threads</div>
-                                <div class="menu-caption-subheading text-muted">Illustration</div> --}}
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -100,10 +95,6 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/menu/menu2.jpg" alt="..." />
                             </a>
-                            <div class="menu-caption">
-                                {{-- <div class="menu-caption-heading">Explore</div>
-                                <div class="menu-caption-subheading text-muted">Graphic Design</div> --}}
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -176,7 +167,7 @@
                 <div class="row">
                     <div class="col-lg-18">
                         <div class="location-member">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7072.805217606665!2d125.36170430632092!3d8.979454687513831!2m3!1f0!2f0!3f0!3m2
+                            <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7072.805217606665!2d125.36170430632092!3d8.979454687513831!2m3!1f0!2f0!3f0!3m2
                              !1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c928b04a6da3%3A0x3d17a3915364df51!2sSAMGYEOPSALANZ!5e0!3m2!1sen!2sph!4v1673632930251!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
             
             
@@ -195,24 +186,24 @@
             </div> 
         </section>
         <!-- Clients-->
-        <div class="py-5">
+        {{-- <div class="py-5">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center" width="96px">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets-homepage/assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Microsoft Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets-homepage/assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Google Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets-homepage/assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Facebook Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets-homepage/assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="IBM Logo" /></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -278,14 +269,14 @@
             </div>
         </section>
             
-            @yield('homepage.include.footer')
+            @include('homepage.include.footer')
 
             <!-- menu Modals-->
         <!-- menu item 1 modal popup-->
         <div class="menu-modal modal fade" id="menuModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets-homepage/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -320,7 +311,7 @@
         <div class="menu-modal modal fade" id="menuModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets-homepage/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
