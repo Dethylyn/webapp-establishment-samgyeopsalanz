@@ -10,12 +10,12 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{-- <h1>Welcome! Thank you for logging in {{Auth::user()->name}}!</h1> --}}
+        
                     <h1 class="float-left">
                         {{$header}}
                     </h1>
 
                     <button class="float-right rounded-full bg-red-600 p-1 hover:bg-red-400">Add Users</button>
-                    
                     <table class="table-auto w-full">
                         <thead>
                             <tr>
