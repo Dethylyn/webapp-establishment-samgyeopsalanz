@@ -12,7 +12,7 @@
                             <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
                             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            {{-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> --}}
                             <li class="nav-item"><a class="nav-link btn btn-warning" href="{{ url('/login')}}">Login</a></li>
                         </ul>
                     </div>
