@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -15,10 +17,18 @@ class UserController extends Controller
     public function index()
     {
         //
-        return view('users', [
+        return view('users.users', [
             'header'    => 'Users Management',
             'users'     => User::all()]);
     }
+
+    public function form()
+    {
+        //
+        return view('users.form', [
+            'header'    => 'Add User']);
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -29,6 +39,19 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            'password' => ['required', Rules\Password::defaults()],
+        ]);
+
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        return redirect('/users');
     }
 
     /**

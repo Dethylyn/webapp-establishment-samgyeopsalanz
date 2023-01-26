@@ -14,8 +14,11 @@
                     <h1 class="float-left">
                         {{$header}}
                     </h1>
-
-                    <button class="float-right rounded-full bg-red-600 p-1 hover:bg-red-400">Add Users</button>
+                    <a href="{{ url('/users/add')}}">
+                        <button class="float-right rounded-full bg-red-600 p-1 hover:bg-red-400">
+                            Add Users
+                        </button>
+                    </a>
                     <table class="table-auto w-full">
                         <thead>
                             <tr>
