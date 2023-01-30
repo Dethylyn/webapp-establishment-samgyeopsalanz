@@ -18,7 +18,7 @@
         <section class="page-section" id="announcements">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase" style="font-family: Serif"><strong>Announcements</strong></h2>
+                    <h2 class="section-heading text-uppercase"><strong>Announcements</strong></h2>
                     <h3 class="section-subheading text-muted">We Offer Unlimited Samgyeopsal.</h3>
                 </div>
                 <div class="row text-center" style="font-family: Serif">
@@ -40,45 +40,61 @@
                 </div>
             </div>
           
-            <!-- Carousel -->
-                {{-- <div class="row">
-                    <div class="col-md-4"> 
-                    class="menu-carousel" 
-                    --}}
+        <!-- Carousel -->
 
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    </div>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="assets/img/announcement/banner1.png" class="d-block w-100" style="width:100%">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/img/announcement/banner2.png" class="d-block w-100" style="width:100%">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/img/announcement/banner3.png" class="d-block w-100" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+
+            {{-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
             
-                    <!-- The slideshow/carousel -->
+                <!-- The slideshow/carousel -->
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="assets/img/banner.png" alt="Los Angeles" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            {{-- <h3>Los Angeles</h3>
-                            <p>We had such a great time in LA!</p> --}}
-                        </div>
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/banner.png" alt="Chicago" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            {{-- <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p> --}}
-                        </div> 
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/banner.png" alt="New York" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            {{-- <h3>New York</h3>
-                            <p>We love the Big Apple!</p> --}}
-                        </div>  
-                        </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/announcement/banner1.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    <div class="carousel-caption">                  
+                    <div class="carousel-item">
+                        <img src="assets/img/announcement/banner2.png" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">                
+                    <div class="carousel-item">
+                        <img src="assets/img/announcement/banner3.png" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">                       
                     </div>
             
                         <!-- Left and right controls/icons -->
@@ -88,127 +104,15 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </button>
-                        </div>
-
-                        
-                        </div>
-
-                  {{-- carousel 2
-
-                    <div class="col-md-4">
-
-                    <div id="de" class="carousel slide" data-bs-ride="carousel">
-
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#de" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#de" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#de" data-bs-slide-to="2"></button>
-                    </div>
-            
-                    <!-- The slideshow/carousel -->
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="assets/img/announcement/slide4.png" alt="Los Angeles" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            {{-- <h3>Los Angeles</h3>
-                            <p>We had such a great time in LA!</p> --}}
-                        {{-- </div>
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/announcement/slide5.png" alt="Chicago" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p>
-                        </div>  
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/announcement/slide7.png" alt="New York" class="d-block" style="width:100%">
-                        <div class="carousel-caption"> --}}
-                            {{-- <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
-                        </div>  
-                        </div>
-                    </div>
-            
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#de" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#de" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                        </div>
-
-                        
-                        </div>
-
-
-
-
-                    {{-- carousel 3 --}}
-                    {{-- <div class="col-md-4">
-
-                    <div id="mo" class="carousel slide" data-bs-ride="carousel"> --}}
-
-                    <!-- Indicators/dots -->
-                    {{-- <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#mo" data-bs-slide-to="2"></button>
-                    </div> --}}
-            
-                    <!-- The slideshow/carousel -->
-
-                    {{-- <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="assets/img/announcement/slide9.png" alt="Los Angeles" class="d-block" style="width:100%">
-                        <div class="carousel-caption"> --}}
-                            {{-- <h3>Los Angeles</h3>
-                            <p>We had such a great time in LA!</p> --}}
-                        {{-- </div>
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/announcement/slide10.png" alt="Chicago" class="d-block" style="width:100%">
-                        <div class="carousel-caption"> --}}
-                            {{-- <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p> --}}
-                        {{-- </div> 
-                        </div>
-                        <div class="carousel-item">
-                        <img src="assets/img/announcement/slide11.png" alt="New York" class="d-block" style="width:100%">
-                        <div class="carousel-caption"> --}}
-                            {{-- <h3>New York</h3>
-                            <p>We love the Big Apple!</p> --}}
-                        {{-- </div>  
-                        </div>
-                    </div> --}}
-            
-                        <!-- Left and right controls/icons -->
-                        {{-- <button class="carousel-control-prev" type="button" data-bs-target="#mo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                        </div>
-
-                        
-                        </div>
-
-
-
-
-                            </div>  --}}
-            </div>
-            
+                    </div>                        
+                </div>
+            </div>                         --}}
         </section>
         <!-- Menu Grid-->
-        <section class="page-section" style="background-color:#575353" id="menu">
+        <section class="page-section" style="background-color:#222831" id="menu">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase text-light" style="font-family: Serif"><strong>Menu</strong></h2>
+                    <h2 class="section-heading text-uppercase text-light"><strong>Menu</strong></h2>
                     <h3 class="section-subheading text-light">We Offer Unlimited Samgyeopsal.</h3>
                 </div>
                 <div class="row">
@@ -234,11 +138,38 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    {{-- <div class="col-md-4"> --}}
                         <!-- Menu item 3-->
-                        <div class="about1 text-light">
-                            <h1 style="font-family: Garamond">We Serve Every Order From The Core Of Our Hearts</h1>
-                            <p>Samgyeopsalanz offers a variety of high-quality meat and classic Korean dishes and spirits in an atmosphere that emulates the rustic and folksy qualities of a local barbecue bar in Korea. A must visit in town.</p>
+                        <div class="col-md-4">
+                            <div class="detail-box text-light">
+                                <div class="heading_container">
+                                <h2>
+                                    We Serve Every Order From The Core Of Our Hearts
+                                </h2>
+                                </div>
+                                <p>
+                                Samgyeopsalanz offers a variety of high-quality meat and classic Korean dishes and spirits in an atmosphere that emulates the rustic and folksy qualities of a local barbecue bar in Korea. A must visit in town.
+                                </p>
+                            </div>
+                        {{-- </div> --}}
+                            <br/>
+                            <div class="row g-2 mb-4 text-light">
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-warning me-2"></i>Affordable Price
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-warning me-2"></i>High-quality Meat
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-warning me-2"></i>Classic Korean Dishes
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-warning me-2"></i> Fresh and Clean
+                                </div>
+                            </div>
+                        {{-- <div class="about1 text-light">
+                            <h2 style="font-family: Montserrat">We Serve Every Order From The Core Of Our Hearts</h2>
+                            <p style="font-family: Roboto Slab">Samgyeopsalanz offers a variety of high-quality meat and classic Korean dishes and spirits in an atmosphere that emulates the rustic and folksy qualities of a local barbecue bar in Korea. A must visit in town.</p>
                         
                             <div class="row g-2 mb-4">
                             <div class="col-sm-6">
@@ -253,22 +184,18 @@
                             <div class="col-sm-6">
                                 <i class="fa fa-check text-warning me-2"></i> Fresh and Clean
                             </div>
-                        </div>
-                            {{-- <a class="menu-link" data-bs-toggle="modal" href="#menuModal2">
-                                <div class="menu-hover">
-                                    <div class="menu-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/menu/menu2.jpg" alt="..." />
-                            </a> --}}
-                        </div>
+                        </div>                     
                     </div>
+                </div>
+            </div> --}}
         </section> 
+        
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
    {{-- EDIT              <div class="col-lg-8 col-sm-6 mb-4"> --}}
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase"style="font-family: Serif"><strong>Guidelines for our valuable customer</strong></h2>
+                        <h2 class="section-heading text-uppercase"><strong>Guidelines for our valuable customer</strong></h2>
                         <h3 class="section-subheading text-muted"></h3>
                     </div>
                     <ul class="timeline">
@@ -321,10 +248,69 @@
                         </li>
                     </ul>
                 </div>
+                 <!-- about section  addition-->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                We Are Feane
+              </h2>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+              the middle of text. All
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="assets/img/bg-header.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+            {{-- </div> --}}
+
+                {{-- Customer Review --}}
+                <!-- Carousel -->
+                {{-- <div id="de" class="carousel slide" data-bs-ride="carousel"> --}}
+
+                <!-- Indicators/dots -->
+                {{-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#de" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#de" data-bs-slide-to="1"></button>
+                </div> --}}
+                
+                <!-- The slideshow/carousel -->
+                {{-- <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="assets/img/about/customer1.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/about/customer2.png" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                </div>
+                 --}}
+                <!-- Left and right controls/icons -->
+                {{-- <button class="carousel-control-prev" type="button" data-bs-target="#de" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button> --}}
+
             </div>
         </section>
-
-        
 
     <!-- About End -->
 
@@ -332,117 +318,20 @@
         <section class="page-section bg-light" id="location">
             <div class="container2">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase" style="font-family: Serif"><strong>Our Location</strong></h2>
+                    {{-- style="font-family: Serif" --}}
+                    <h2 class="section-heading text-uppercase"><strong>Our Location</strong></h2>
                     <h3 class="section-subheading text-muted"><strong>District 8, Nasipit, Agusan del Norte</strong></h3>
                 </div>
                 <div class="row">
                     {{-- <div class="col-lg-8"> --}}
                         <div class="location-member">
                             <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7072.805217606665!2d125.36170430632092!3d8.979454687513831!2m3!1f0!2f0!3f0!3m2
-                             !1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c928b04a6da3%3A0x3d17a3915364df51!2sSAMGYEOPSALANZ!5e0!3m2!1sen!2sph!4v1673632930251!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
-           
-                          <!--  <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                            -->
-                        </div>
-                    {{-- </div> --}}
-                    {{-- </div> --}}
-                    {{-- <div class="col-lg-4">
-                        <img class="float-right" src="assets/img/location2.png" alt="..." width="400" height="430">
-                    </div> --}}
-                </div>
-                {{-- <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div> --}}
+                             !1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c928b04a6da3%3A0x3d17a3915364df51!2sSAMGYEOPSALANZ!5e0!3m2!1sen!2sph!4v1673632930251!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        </div>                   
+                </div>              
             </div> 
         </section>
-        <!-- Clients-->
-        {{-- <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center" width="96px">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-pig.png" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Contact-->
-        {{-- <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2> --}}
-                    {{-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> --}}
-                {{-- </div> --}}
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                {{-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group"> --}}
-                                <!-- Name input-->
-                                {{-- <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group"> --}}
-                                <!-- Email address input-->
-                                {{-- <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0"> --}}
-                                <!-- Phone number input-->
-                                {{-- <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0"> --}}
-                                <!-- Message input-->
-                                {{-- <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    {{-- <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div> --}}
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    {{-- <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div> --}}
-                    <!-- Submit Button-->
-                    {{-- <div class="text-center"><button class="btn btn-warning btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section> --}}
-            
+                  
             @include('homepage.include.footer2')
 
             <!-- menu Modals-->
@@ -456,20 +345,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    {{-- <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> --}}
+                                   
                                     <img class="img-fluid d-block mx-auto" src="assets/img/menu/menu1.jpg" alt="..." />
-                                    {{-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul> --}}
+                                    
                                     <button class="btn btn-warning btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -490,21 +368,9 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
-                                    {{-- <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> --}}
+                                    
                                     <img class="img-fluid d-block mx-auto" src="assets/img/menu/menu2.jpg" alt="..." />
-                                    {{-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul> --}}
+                                    
                                     <button class="btn btn-warning btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close

@@ -21,13 +21,36 @@
                     <a class="btn btn-link" href="#about">About Us</a>
                     <a class="btn btn-link" href="#location">Location</a>
                 </div>
+                {{-- <div class="col-lg-3 col-md-6"> --}}
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide9.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide10.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide11.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide12.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide13.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="assets/img/announcement/slide1.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                    {{-- <h4 class="text-light mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="#announcements">Announcements</a>
                     <a class="btn btn-link" href="#menu">Menu</a>
                     <a class="btn btn-link" href="#about">About Us<</a>
-                    <a class="btn btn-link" href="#location">Location</a>
-                </div>
+                    <a class="btn btn-link" href="#location">Location</a> --}}
+                {{-- </div> --}}
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Photo Gallery</h4>
                     <div class="row g-2">

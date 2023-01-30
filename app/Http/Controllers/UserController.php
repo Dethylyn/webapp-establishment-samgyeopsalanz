@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\Hash;
+// use App\Http\Controllers\DB;
 
 class UserController extends Controller
 {
@@ -38,19 +39,22 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        ///For Validation
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', Rules\Password::defaults()],
         ]);
-
+        // For Storing after Validation
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
+        session()->flash('status', 'Added User Successfully!');
+
+        // Redirect to the List of Users
         return redirect('/users');
     }
 
@@ -62,7 +66,12 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+
+        return view('users.form', [
+                'header'    => 'Update User',
+                'user'      => $user
+            ]); 
     }
 
     /**
@@ -74,8 +83,37 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // For Validation
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255']
+        ]);
+
+        $user = User::find($id);
+
+        $user->update($request->all());
+
+        session()->flash('status', 'Updated User Successfully!');
+
+        return redirect('/users');
     }
+
+    public function change_password(Request $request, $id)
+    {
+        // For Validation
+        $request->validate([
+            'password' => ['string', 'max:255']       
+        ]);
+
+        $user = User::find($id);
+
+        $user->update($request->all());
+
+        session()->flash('status', 'Updated Password Successfully!');
+
+        return redirect('/users/change_password/' . $user->id);
+    }
+
 
     /**
      * Remove the specified resource from storage.
@@ -85,6 +123,20 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id)->delete();
+        return redirect('/users')->with('status','Deleted User Successfully');
+        // $user = User::findOrFail($id);
+
+        // $user->delete();
+        
+        // $response = [
+        //     'user' => new UserResourse($user),
+        //     'message' => 'Deleted User Successfully!',
+
+        // ];
+        // return response($response, 200);
+        
+        // $user->delete('delete from users where id = ?', [$id]);
+        // return redirect('/users')->with('success','Deleted User Successfully');
     }
 }
