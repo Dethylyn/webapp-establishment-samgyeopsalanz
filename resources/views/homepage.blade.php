@@ -258,7 +258,7 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                Samgyeopsalanz
               </h2>
             </div>
             <p>
@@ -267,14 +267,17 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text. All
             </p>
-            <a href="">
+            {{-- <a href="">
               Read More
-            </a>
+            </a> --}}
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="assets/img/bg-header.jpg" alt="">
+            <img src="assets/img/opening.JPG" alt="">
           </div>
         </div>
       </div>

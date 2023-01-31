@@ -40,6 +40,9 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/style1.css" rel="stylesheet">
+          
+
         
     </head>
     <body id="page-top">

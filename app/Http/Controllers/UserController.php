@@ -4,83 +4,85 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\Hash;
-// use App\Http\Controllers\DB;
+use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
         return view('users.users', [
-            'header'    => 'Users Management',
-            'users'     => User::all()]);
+            'header' => 'Users Management',
+            'users' =>  User::all()
+        ]);
     }
 
     public function form()
     {
-        //
         return view('users.form', [
-            'header'    => 'Add User']);
+            'header' => 'Add Users',
+
+        ]);
+    }
+
+    public function passwordForm($id)
+    {
+        $user = User::find($id);
+        return view('users.form_password', [
+            'header' => 'Change Password',
+            'user'      => $user
+        ]);
+    }
+
+    public function changePassword(Request $request, $id)
+    {
+        
+        DB::table('users')->where('id', $request->id)->update([
+            'password' => Hash::make($request->password)
+        ]);
+
+        session()->flash('status', 'Password Updated Successfully!');
+
+        return redirect('/users');
     }
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        ///For Validation
+
+        //FOR VALIDATION
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', Rules\Password::defaults()],
         ]);
-        // For Storing after Validation
+
+
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+
         ]);
 
         session()->flash('status', 'Added User Successfully!');
-
-        // Redirect to the List of Users
         return redirect('/users');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        $user = User::find($id);
+   
+     public function show($id)
+     {
+         $user = User::find($id);
+ 
+         return view('users.form', [
+                 'header'    => 'Update User',
+                 'user'      => $user
+             ]); 
+     }
 
-        return view('users.form', [
-                'header'    => 'Update User',
-                'user'      => $user
-            ]); 
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, $id)
     {
         // For Validation
@@ -98,45 +100,13 @@ class UserController extends Controller
         return redirect('/users');
     }
 
-    public function change_password(Request $request, $id)
-    {
-        // For Validation
-        $request->validate([
-            'password' => ['string', 'max:255']       
-        ]);
-
+    public function destroy(Request $request, $id){
+        
         $user = User::find($id);
-
-        $user->update($request->all());
-
-        session()->flash('status', 'Updated Password Successfully!');
-
-        return redirect('/users/change_password/' . $user->id);
+        $user->delete($request->all());
+        session()->flash('status', 'Data Successfully Deleted!');
+        return redirect('/users');
     }
 
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        $user = User::find($id)->delete();
-        return redirect('/users')->with('status','Deleted User Successfully');
-        // $user = User::findOrFail($id);
-
-        // $user->delete();
-        
-        // $response = [
-        //     'user' => new UserResourse($user),
-        //     'message' => 'Deleted User Successfully!',
-
-        // ];
-        // return response($response, 200);
-        
-        // $user->delete('delete from users where id = ?', [$id]);
-        // return redirect('/users')->with('success','Deleted User Successfully');
-    }
+    
 }
