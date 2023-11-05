@@ -30,6 +30,7 @@
                             <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
                             {{-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> --}}
                             <li class="nav-item"><a class="nav-link btn btn-warning" href="{{ url('/login')}}">Login</a></li>
+                            <li class="nav-item"><a class="nav-link btn btn-warning" href="{{ url('/register')}}">Register</a></li>
                         </ul>
                     </div>
                 </div>

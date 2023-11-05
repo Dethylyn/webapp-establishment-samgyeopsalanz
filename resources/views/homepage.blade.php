@@ -262,10 +262,14 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Welcome to samgyeopsalanz restober, this was opened on June 28, 2022 own by company Anzconstruction. They offer unlimited Korean BBQ with affordable price for only 199 pesos on their Grand Opening.<br>
+              <br>Samgyeopsalanz becomes popular not only in Nasipit but in Agusan del Norte Province.
+
+              <br>Samgyeopsalanz directly translated from Korean, samgyeop-sal (삼겹살) means "three layer flesh," referring to striations of lean meat and fat in the pork belly that appear as three layers when cut.[1][2]
+
+              It is the part of the abdomen under the loin from the 5th rib or 6th rib to the hind limb.[3] In Korea, the word samgyeop-sal, meaning "pork belly", often refers to samgyeop-sal-gui (grilled pork belly), in the same way that the word galbi, meaning "ribs", often refers to galbi-gui (grilled beef ribs). Gui refers to roasted, baked, or grilled dishes.
+
+              One can also find ogyeopsal (오겹살), with an o meaning "five" and "gyeop" meaning a layer. Ogyeop-sal includes the skin part of the pork belly, unlike samgyeop-sal where the skin is removed.
             </p>
             {{-- <a href="">
               Read More
